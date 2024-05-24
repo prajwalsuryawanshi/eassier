@@ -20,7 +20,7 @@
                             <h1 class="display-5 fw-bolder">Welcome {{ user.first_name }}</h1>
                             <div class="fs-5 mb-5">
                                 <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Enter your eassy here to Evatuate</label>
+                                    <label for="exampleFormControlTextarea1">Enter your eassy here to Evaluate</label>
                                    <form method="post" action="{% url 'evaluate' %}"> {% csrf_token %}<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  name="eassy" style="height: 215px;"></textarea><button type="submit" class="btn btn-primary my-2">Evaluate</button></form>
                                   </div>
                             </div>

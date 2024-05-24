@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
-from .models import geteassy
 # Create your views here.
 
 def login(request):
@@ -13,6 +12,6 @@ def home(request):
 
 def evauate(request):
         if request.method == "POST": #
-            es = request.GET.get('eassy') 
-
-        return render(request, 'home.html')
+            es = request.POST.get('eassy') 
+            print(es)
+        return render(request, 'home.html') 
